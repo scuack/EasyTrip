@@ -1,69 +1,130 @@
 <!--diego-->>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+      body {
+        background: #aab2bd;
+        background: linear-gradient(to right, #f1f1f1, #aab2bd);
+      }
+      .bg {
+        background-image: url(img/login.jpg);
+        background-position: center center;
+        background-size:cover ;
+        
+      }
+    </style>
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+<body>
+    <div class="container w-75 bg-light my-5 rounded">
+      <div class="row align-items-stretch">
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 raunded">
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        </div>
+        <div class="col p-3 rounded-end">
+            <h2 class="fw-bold text-center py-5"><a href="index.html" style="text-decoration: none;color: black;">EasyTrip</a></h2>
+          <!-- login -->
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/index.js"></script>
-        <link href="css/index.css" rel="stylesheet">
-        <title>Registro - Renta de peliculas</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Crear cuenta - Renta de peliculas</a>
-        </nav>
-        <main class="p-4 d-flex justify-content-center">
-            <div class="card sizeDiv">
-                <div class="card-body">
-                    <form id="form-register" class="pb-4">
-                        <div class="form-group">
-                            <label for="input-username">Nombre de usuario</label>
-                            <input type="text" class="form-control" id="input-username" placeholder="Nombre de usuario" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="input-contrasena">Contraseña</label>
-                                <input type="password" class="form-control" id="input-contrasena" placeholder="Contraseña" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="input-contrasena-repeat">Repetir contraseña</label>
-                                <input type="password" class="form-control" id="input-contrasena-repeat" placeholder="Repetir contraseña" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-nombre">Nombre</label>
-                            <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-apellido">Apellidos</label>
-                            <input type="text" class="form-control" id="input-apellido" placeholder="Apellidos" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-email">Email</label>
-                            <input type="text" class="form-control" id="input-email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-saldo">Saldo</label>
-                            <input type="number" class="form-control" id="input-saldo" placeholder="0" min="0" max="1000000" value="0" required>
-                        </div>
-                        <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
-                    </form>
-                    <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
-                    <a href="login.html">¿Ya tienes cuenta? Iniciar sesión</a>
+          <form action="#" id="form-register">
+            <div class="mb-3 form-group">
+              <label for="input-username" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="input-username" name="input-username" required>
+            </div>
+            <div class="mb-3 form-group">
+              <label for="input-contrasena" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="input-contrasena" name="input-contrasena" required>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="input-contrasena-repeat" class="form-label">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="input-contrasena-repeat" name="input-contrasena-repeat" required>
+              </div>
+            <div class="mb-3 form-group">
+                <label for="input-nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="input-nombre" name="input-nombre" required>
+              </div>
+              <div class="mb-3 form-group">
+                <label for="input-apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="input-apellido" name="input-apellido" required>
+              </div>
+              <div class="mb-3 form-group">
+                <label for="input-email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="input-email" name="input-email" required>
+              </div>
+              <div class="mb-4 form-group">
+                <label for="input-saldo" class="form-label">Saldo</label>
+                <input type="username" class="form-control" id="input-saldo" name="input-saldo" required>
+              </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary" id="BTNENTRAR">Registrar usuario</button>
+            </div>
+            <div class="my-3 text-center">
+              <span>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a> </span> <br>              
+            </div>
+          </form>
+          <!-- Login con redes sociales -->
+           <div class="container w-100 my-4"></div>
+           <div class="row text-center">
+            <div class="col-12">Registrarse</div>
+           </div>
+           <div class="row mb-4">
+            <div class="col">
+              <button class="btn btn-outline-primary w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="col-10 text-center">
+                    Facebook
+                  </div>
                 </div>
-            </div> 
-        </main>
-    </body>
+                
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-danger w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <i class="fa-brands fa-google"></i>
+                  </div>
+                  <div class="col-12 col-md-10 text-center">
+                    Google
+                  </div>
+                </div>
+                
+              </button>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Diseño para que se revelen proceduralmente los componentes de la página -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.container', {
+            duration: 2000,
+            origin: "bottom" 
+        });
+    </script>
+</body>
 </html>
